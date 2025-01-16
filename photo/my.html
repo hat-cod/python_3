@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Flow Diagram</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            text-align: center;
+        }
+        .people {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            flex-wrap: wrap;
+        }
+        .user {
+            border: 2px solid #673AB7;
+            padding: 20px;
+            margin: 10px;
+            border-radius: 10px;
+            background-color: #f3e5f5;
+            width: 120px;
+            text-align: center;
+        }
+        .arrow {
+            display: inline-block;
+            width: 50px;
+            height: 2px;
+            background-color: #000;
+            position: relative;
+            margin: 0 10px;
+        }
+        .arrow::after {
+            content: '';
+            position: absolute;
+            right: 0;
+            top: -5px;
+            border: 5px solid transparent;
+            border-left: 10px solid #000;
+        }
+    </style>
+</head>
+<body>
+    <h1>DiaGram in Linkedin</h1>
+    <div class="people">
+        <div class="step">People</div>
+        <div class="arrow"></div>
+        <div class="user">user id</div>
+        
+    </div>
+</body>
+</html>
+
+
